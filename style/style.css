@@ -21,7 +21,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* display: none; */
+}
+
+.hide {
+    animation: hide .3s linear forwards;
+}
+
+@keyframes hide {
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
 }
 
 .first__img {
@@ -51,8 +61,6 @@
 }
 
 .first__button {
-    /* outline: none;
-    border: none; */
     padding: 15px 15px;
     border-radius: 3px;
     font-size: 1.8rem;
@@ -69,6 +77,18 @@
     font-family: "Gloria Hallelujah", cursive;
     font-weight: 400;
     font-style: normal;
+    animation: slideRight 0.3s linear;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .second__text > h1 {
@@ -119,6 +139,18 @@
     color: #fff;
     text-align: center;
     display: none;
+    animation: scale 0.3s linear;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .third__text {
@@ -149,6 +181,7 @@
     color: #fff;
     text-align: center;
     display: none;
+    animation: scale 0.3s linear;
 }
 
 .final__title {

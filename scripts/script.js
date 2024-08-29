@@ -1,5 +1,10 @@
 function showQuestion() {
-    document.getElementById('first').style.display = 'none';
+    var first = document.getElementById('first');
+    first.classList.add('hide')
+    // setTimeout(
+        //  , 1000
+    // );
+    // first.style.display = 'none';
     document.getElementById('second').style.display = 'block';
 }
 
